@@ -8,6 +8,7 @@ namespace middleman
 	public interface IRegistrationService
 	{
 		bool RegisterUser(User user);
+		bool RegisterSeller(Seller seller);
 	}
 	public class RegistrationService : IRegistrationService
     {
@@ -23,7 +24,13 @@ namespace middleman
 			_context.SaveChanges();
 			return true;
 		}
-
+        public bool RegisterSeller(Seller seller)
+        {
+            seller.S_Password = HashPassword(seller.S_Password);
+            _context.Sellers.Add(seller);
+            _context.SaveChanges();
+            return true;
+        }
         private string HashPassword(string password)
         {
 			using (var sha256 = SHA256.Create())

@@ -5,5 +5,7 @@ Accept: application/json
 
 POST {{middleman_HostAddress}}/User
 Accept: application/json
+POST {{middleman_HostAddress}}/Seller
+Accept: application/json
 ###
 

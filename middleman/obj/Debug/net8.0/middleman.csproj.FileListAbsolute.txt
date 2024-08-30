@@ -68,3 +68,4 @@
 /Users/sanamr/Projects/middleman/middleman/obj/Debug/net8.0/middleman.pdb
 /Users/sanamr/Projects/middleman/middleman/obj/Debug/net8.0/middleman.genruntimeconfig.cache
 /Users/sanamr/Projects/middleman/middleman/obj/Debug/net8.0/ref/middleman.dll
+/Users/sanamr/Projects/middleman/middleman/obj/Debug/net8.0/middleman.sourcelink.json

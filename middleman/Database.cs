@@ -12,7 +12,8 @@ namespace middleman
         {
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; } //Table Name - Users
+        public DbSet<Seller> Sellers { get; set; } //Table Name - Users
     }
 }
 
