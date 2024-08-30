@@ -1,0 +1,9 @@
+﻿@middleman_HostAddress = http://localhost:5232
+
+GET {{middleman_HostAddress}}/UserDetails
+Accept: application/json
+
+POST {{middleman_HostAddress}}/User
+Accept: application/json
+###
+
