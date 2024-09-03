@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{2BCF503A-7909-4898-81FC-51D83E888A00}|https">
-  <MonoDevelop.Ide.ItemProperties.middleman PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="middleman/Controllers/RegisterController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.middleman PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="middleman/Models/Seller.cs" />
       <File FileName="middleman/Database.cs" />
-      <File FileName="middleman/RegistrationService.cs" Line="13" Column="15" />
-      <File FileName="middleman/Controllers/RegisterController.cs" Line="39" Column="25" />
-      <File FileName="middleman/Program.cs" Line="11" Column="69" />
+      <File FileName="middleman/RegistrationService.cs" />
+      <File FileName="middleman/Controllers/RegisterController.cs" />
+      <File FileName="middleman/Program.cs" Line="5" Column="26" />
       <File FileName="middleman/appsettings.Development.json" />
       <File FileName="middleman/Properties/launchSettings.json" />
       <File FileName="middleman/appsettings.json" />
@@ -19,21 +20,19 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="middleman" expanded="True">
+          <Node name="middleman">
             <Node name="middleman" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="RegisterController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
