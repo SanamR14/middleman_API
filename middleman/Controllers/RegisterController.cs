@@ -56,5 +56,18 @@ public class RegisterController : ControllerBase
         }
     }
 
+    [HttpGet("users")]
+    public IActionResult GetAllUsers()
+    {
+        List<User> users = _registrationService.GetAllUsers();
+
+        if (users == null || users.Count == 0)
+        {
+            return NotFound("No users found.");
+        }
+
+        return Ok(users);
+    }
+
 }
 

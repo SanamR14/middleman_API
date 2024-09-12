@@ -11,7 +11,8 @@ namespace middleman
 	{
 		bool RegisterUser(User user);
 		bool RegisterSeller(Seller seller);
-	}
+        List<User> GetAllUsers();
+    }
 	public class RegistrationService : IRegistrationService
     {
 		private readonly MiddlemanDbContext _context;
@@ -41,6 +42,10 @@ namespace middleman
 				var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
                 return Convert.ToBase64String(hashedBytes);
 			}
+        }
+        public List<User> GetAllUsers()
+        {
+            return _context.Users.ToList();
         }
 
         private void SendConfirmationEmail(string userEmail)
