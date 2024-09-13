@@ -1,6 +1,6 @@
 ﻿@middleman_HostAddress = http://localhost:5232
 
-GET {{middleman_HostAddress}}/UserDetails
+GET {{middleman_HostAddress}}/users
 Accept: application/json
 
 POST {{middleman_HostAddress}}/User
