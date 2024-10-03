@@ -1,32 +1,27 @@
-﻿<Properties StartupConfiguration="{2BCF503A-7909-4898-81FC-51D83E888A00}|https">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{2BCF503A-7909-4898-81FC-51D83E888A00}|https">
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.middleman PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="middleman/Properties/launchSettings.json">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench ActiveDocument="middleman/RegistrationService.cs">
     <Files>
-      <File FileName="middleman/Properties/launchSettings.json" Line="18" Column="48" />
-      <File FileName="middleman/Program.cs" Line="38" Column="1" />
-      <File FileName="middleman/Dockerfile" Line="6" Column="11" />
-      <File FileName="middleman/middleman.http" Line="3" Column="36" />
+      <File FileName="middleman/RegistrationService.cs" Line="85" Column="7" />
+      <File FileName="middleman/Database.cs" Line="17" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="middleman" expanded="True">
             <Node name="middleman">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="middleman.http" selected="True" />
+              <Node name="RegistrationService.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>

@@ -11,7 +11,7 @@ namespace middleman
 	{
 		bool RegisterUser(User user);
 		bool RegisterSeller(Seller seller);
-        List<User> GetAllUsers();
+        List<Product> GetAllProduct();
     }
 	public class RegistrationService : IRegistrationService
     {
@@ -43,9 +43,9 @@ namespace middleman
                 return Convert.ToBase64String(hashedBytes);
 			}
         }
-        public List<User> GetAllUsers()
+        public List<Product> GetAllProduct()
         {
-            return _context.Users.ToList();
+            return _context.Product.ToList();
         }
 
         private void SendConfirmationEmail(string userEmail)
@@ -82,6 +82,7 @@ namespace middleman
             }
         }
 
+      
     }
 }
 

@@ -56,17 +56,17 @@ public class RegisterController : ControllerBase
         }
     }
 
-    [HttpGet("users")]
+    [HttpGet("product")]
     public IActionResult GetAllUsers()
     {
-        List<User> users = _registrationService.GetAllUsers();
+        List<Product> product = _registrationService.GetAllProduct();
 
-        if (users == null || users.Count == 0)
+        if (product == null || product.Count == 0)
         {
             return NotFound("No users found.");
         }
 
-        return Ok(users);
+        return Ok(product);
     }
 
 }
