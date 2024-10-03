@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  middleman:
-    image: ${DOCKER_REGISTRY-}middleman
-    build:
-      context: .
-      dockerfile: middleman/Dockerfile
