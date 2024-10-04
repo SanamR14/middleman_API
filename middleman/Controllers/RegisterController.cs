@@ -57,7 +57,7 @@ public class RegisterController : ControllerBase
     }
 
     [HttpGet("product")]
-    public IActionResult GetAllUsers()
+    public IActionResult GetAllProduct()
     {
         List<Product> product = _registrationService.GetAllProduct();
 
@@ -67,6 +67,19 @@ public class RegisterController : ControllerBase
         }
 
         return Ok(product);
+    }
+
+    [HttpGet("users")]
+    public IActionResult GetAllUsers()
+    {
+        List<User> user = _registrationService.GetAllUsers();
+
+        if (user == null || user.Count == 0)
+        {
+            return NotFound("No users found.");
+        }
+
+        return Ok(user);
     }
 
 }

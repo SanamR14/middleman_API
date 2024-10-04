@@ -12,6 +12,7 @@ namespace middleman
 		bool RegisterUser(User user);
 		bool RegisterSeller(Seller seller);
         List<Product> GetAllProduct();
+        List<User> GetAllUsers();
     }
 	public class RegistrationService : IRegistrationService
     {
@@ -47,7 +48,10 @@ namespace middleman
         {
             return _context.Product.ToList();
         }
-
+        public List<User> GetAllUsers()
+        {
+            return _context.Users.ToList();
+        }
         private void SendConfirmationEmail(string userEmail)
         {
             try
