@@ -27,7 +27,7 @@ public class RegisterController : ControllerBase
 
         var isRegistered = _registrationService.RegisterUser(model);
 
-        if (isRegistered)
+        if (isRegistered == true)
         {
             return Ok();
         }
@@ -46,7 +46,7 @@ public class RegisterController : ControllerBase
 
         var isRegistered = _registrationService.RegisterSeller(model);
 
-        if (isRegistered)
+        if (isRegistered == true)
         {
             return Ok();
         }
