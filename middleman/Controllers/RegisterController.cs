@@ -17,7 +17,7 @@ public class RegisterController : ControllerBase
         _registrationService = registrationService;
     }
 
-    [HttpPost("Consumer")]
+    [HttpPost("consumer")]
     public IActionResult Register([FromBody] User model)
     {
         if(model == null)
@@ -36,7 +36,7 @@ public class RegisterController : ControllerBase
             return BadRequest("Registration failed");
         }
     }
-    [HttpPost("Seller")]
+    [HttpPost("seller")]
     public IActionResult RegisterSeller([FromBody] Seller model)
     {
         if (model == null)
