@@ -18,7 +18,7 @@ public class RegisterController : ControllerBase
     }
 
     [HttpPost("consumer")]
-    public IActionResult Register([FromBody] User model)
+    public IActionResult Register(User model)
     {
         if(model == null)
         {
@@ -37,7 +37,7 @@ public class RegisterController : ControllerBase
         }
     }
     [HttpPost("seller")]
-    public IActionResult RegisterSeller([FromBody] Seller model)
+    public IActionResult RegisterSeller(Seller model)
     {
         if (model == null)
         {
