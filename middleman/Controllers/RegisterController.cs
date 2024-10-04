@@ -29,11 +29,11 @@ public class RegisterController : ControllerBase
 
         if (isRegistered)
         {
-            return Ok("User registered successfully");
+            return Ok();
         }
         else
         {
-            return BadRequest("Registration failed");
+            return BadRequest();
         }
     }
     [HttpPost("seller")]
@@ -48,11 +48,11 @@ public class RegisterController : ControllerBase
 
         if (isRegistered)
         {
-            return Ok("User registered successfully");
+            return Ok();
         }
         else
         {
-            return BadRequest("Registration failed");
+            return BadRequest();
         }
     }
 
