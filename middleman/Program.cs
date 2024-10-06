@@ -6,16 +6,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:4200", "http://localhost:3000", "https://middlemanui.netlify.app")
-                                                    .AllowAnyHeader()
-                                                    .AllowAnyMethod();
-                      });
-});
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy(name: MyAllowSpecificOrigins,
+//                      policy =>
+//                      {
+//                          policy.WithOrigins("http://localhost:4200", "http://localhost:3000", "https://middlemanui.netlify.app")
+//                                                    .AllowAnyHeader()
+//                                                    .AllowAnyMethod();
+//                      });
+//});
 
 builder.Services.AddDbContext<MiddlemanDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
